@@ -1,0 +1,21 @@
+{
+  "name": "insightfulpipe-google-ads",
+  "displayName": "InsightfulPipe Skills for Google Ads",
+  "description": "36 free Claude skills for Google Ads: account audits, search term mining, negative keywords, Quality Score, Performance Max, bid strategy, budgets, pacing and reports. Changes only after you confirm.",
+  "version": "2026.10.3107",
+  "author": {
+    "name": "InsightfulPipe",
+    "url": "https://insightfulpipe.com"
+  },
+  "homepage": "https://insightfulpipe.com/marketing-claude-skills/google-ads",
+  "repository": "https://github.com/Insightful-Pipe/google-ads-skills",
+  "license": "MIT",
+  "keywords": [
+    "google-ads",
+    "ppc",
+    "paid-search",
+    "performance-max",
+    "claude-skills",
+    "marketing"
+  ]
+}
