@@ -17,5 +17,9 @@
     "performance-max",
     "claude-skills",
     "marketing"
-  ]
+  ],
+  "documentationUrl": "https://insightfulpipe.com/docs",
+  "supportUrl": "https://insightfulpipe.com/help",
+  "privacyPolicyUrl": "https://insightfulpipe.com/privacy",
+  "termsOfServiceUrl": "https://insightfulpipe.com/terms"
 }

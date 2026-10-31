@@ -341,6 +341,11 @@ def main():
         "repository": f"https://github.com/{ORG}/{p['repo']}",
         "license": "MIT",
         "keywords": p["keywords"],
+        # Read by Anthropic's plugin directory for the listing's links.
+        "documentationUrl": f"{SITE}/docs",
+        "supportUrl": f"{SITE}/help",
+        "privacyPolicyUrl": f"{SITE}/privacy",
+        "termsOfServiceUrl": f"{SITE}/terms",
     }
     market = {
         "name": name,
@@ -353,7 +358,8 @@ def main():
 
     if tree_digest(tracked + [PLUGIN, MARKETPLACE]) != before:
         now = datetime.datetime.now(datetime.timezone.utc)
-        version = f"{now.year}.{now.month}.{now.day * 100 + now.hour}"
+        # Every change gets a higher version (day, hour and minute), which the plugin directory requires.
+        version = f"{now.year}.{now.month}.{now.day * 10000 + now.hour * 100 + now.minute}"
         manifest["version"] = market["metadata"]["version"] = version
         write_json(PLUGIN, manifest)
         write_json(MARKETPLACE, market)
